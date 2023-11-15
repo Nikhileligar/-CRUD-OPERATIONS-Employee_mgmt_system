@@ -1,0 +1,166 @@
+.heading1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ui-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  body {
+    background-color: #000000;
+  }
+
+  .right-container {
+    padding-top: 200px;
+    padding-left: 150px;
+  }
+
+  .nav-container {
+    background-color: transparent;
+    color: white;
+    position: fixed;
+    right: 0;
+    top:0;
+  }
+  
+  .navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar li {
+    padding: 30px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Apply basic styling for layout structure */
+.min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .p-24 {
+    padding: 16px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.186);
+    backdrop-filter: blur(10px);
+}
+
+.UX-center-container {
+    background: #ffffff09;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ux-components {
+    margin: 20px 0;
+}
+
+.submit-button {
+    cursor: pointer;
+}
+.signup-heading {
+  font-size: 39px;
+  margin: 0 0 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:#ffff;
+}
+
+.email-component,
+.name-component,
+.password-component {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-buttonn{
+    background: #02162c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.head-compo { 
+    padding-bottom: 150px;
+    top: 0; 
+}
+
+.heading1-content {
+  display: flex;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.heading1-content span {
+  margin-right: 50px;
+}
+
+/* .desc {
+  padding: 50px;
+} */
+  
+
+
