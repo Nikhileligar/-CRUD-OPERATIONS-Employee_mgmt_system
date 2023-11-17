@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import jwt from 'jsonwebtoken';
 import User from "@/model/userModel";
+import getLoggedInUserId from "../getDetails/route";
 
-export async function GET (req: NextRequest) {
+export default async function GET (req: NextRequest) {
     try {
         const data = await getLoggedInUserId(req);
         console.log('data',data);
@@ -26,15 +27,15 @@ export async function GET (req: NextRequest) {
     
 }
 
-export const getLoggedInUserId = async (req: NextRequest) => {
-    try {
-        const token = await req.cookies.get('token')?.value || '';
-        const decodeTokenData: any = await jwt.verify(token,'xyz');
-        console.log(decodeTokenData,'decoded token data');
-        return decodeTokenData;
-    } catch (err) {
-        console.log('error in get users Api',err)
-        throw new Error ('error in retrieving the user details');
-    }
-}
+// export const getLoggedInUserId = async (req: NextRequest) => {
+//     try {
+//         const token = await req.cookies.get('token')?.value || '';
+//         const decodeTokenData: any = await jwt.verify(token,'xyz');
+//         console.log(decodeTokenData,'decoded token data');
+//         return decodeTokenData;
+//     } catch (err) {
+//         console.log('error in get users Api',err)
+//         throw new Error ('error in retrieving the user details');
+//     }
+// }
 

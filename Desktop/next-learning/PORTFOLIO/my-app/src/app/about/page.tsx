@@ -1,10 +1,11 @@
 export default async function AboutPage () {
     
     return (
-        <div className="contents">
+        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <div className="contents-ui">
             <div className="ui-components">
                 <div className="left-header-content">
-                    <h1>Hi! this is Nikhil </h1>
+                    <h1 className="heading2">Hi! this is Nikhil </h1>
                 </div>
                 <div className="content">
                     <p>
@@ -16,5 +17,6 @@ export default async function AboutPage () {
                 </div>
             </div>
         </div>
+    </main>
     )
 }
